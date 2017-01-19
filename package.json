@@ -1,0 +1,32 @@
+{
+  "name": "js-starter",
+  "version": "1.0.0",
+  "description": "Minimal JS boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "watch": "chokidar 'src/*.js' -c 'npm run transpile'",
+    "transpile": "babel src --out-dir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lindekaer/js-starter.git"
+  },
+  "author": "Theodor C. Listov Lindekaer <theodor.lindekaer@gmail.com> (https://lindekaer.github.io)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lindekaer/js-starter/issues"
+  },
+  "homepage": "https://github.com/lindekaer/js-starter#readme",
+   "babel": {
+    "presets": [
+      "es2015-node",
+      "stage-0"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "6.18.0",
+    "babel-preset-es2015-node": "6.1.1",
+    "babel-preset-stage-0": "6.16.0",
+    "chokidar-cli": "1.2.0"
+  }
+}
